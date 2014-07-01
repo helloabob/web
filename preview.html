@@ -1,0 +1,37 @@
+<center>
+<script type="text/javascript">
+	function thisMovie() {
+		if (navigator.userAgent.indexOf("MSIE") != -1) {
+			return window["player1"];
+		}else {
+			return document["player2"];
+		}
+	}
+	function preview(){
+		this.swfOcj=thisMovie();
+		// this.swfOcj.setEditDat();
+
+		alert(this.swfOcj.getEditDat());
+	}
+	function serialOrder(){
+		this.swfOcj=thisMovie();
+		this.swfOcj.setEditDat('[{"start":55.08,"total":122.39999999999996,"end":177.47999999999996},{"start":225.59999999999997,"total":145.40000000000003,"end":371}]');
+	}
+</script>
+<div>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" name="player1" id="player1" width="698" height="433"><param name="movie" value="PreviewPlayer?publisherId=88000"><param name="flashvars" value="playerId=84863534562803713&amp;apiDomain=apivideo.kankanews.com"><param name="allowFullScreen" value="true"><param name="wmode" value="transparent"><param name="allowscriptaccess" value="always"><embed src="PreviewPlayer.swf?publisherId=88000" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" width="698" height="433" name="player2" id="player2" flashvars="playerId=84863534562803713&amp;apiDomain=apivideo.kankanews.com"></object>
+<!--<embed id="videoEditor" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="570" src="EasyEditor.swf" quality="high" bgcolor="#ffffff" allowscriptaccess="always" wmode="transparent" flashvars="">-->
+</div>
+<div style="height:20;"></div>
+<div>
+<a href="#" id="btn-preview" style="width:93; height:32; background:#d30915; text-align:center; cursor:pointer; color:#fff; display:inline-block; vertical-align:middle; TEXT-DECORATION:none; font:12px/18px arial;" onclick="preview()">预览</a>
+</div>
+<div style="height:20;"></div>
+<div>
+<a href="#" id="btn-preview" style="width:93; height:32; background:#d30915; text-align:center; cursor:pointer; color:#fff; display:inline-block; vertical-align:middle; TEXT-DECORATION:none; font:12px/18px arial;" onclick="serialOrder()">串联单</a>
+</div>
+</center>
+
+<!--
+display:inline-block; border:none; vertical-align:middle; line-height:32;
+-->
