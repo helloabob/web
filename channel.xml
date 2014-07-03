@@ -1,0 +1,20 @@
+<root>
+<channel name="频道名字" id="频道id" date="2011-06-24">
+<program>
+<title>2</title>
+<type></type>
+<starttime></starttime>
+<endtime></endtime>
+<timestamp></timestamp>
+<length></length>
+</program>
+<program>
+<title>3</title>
+<type></type>
+<starttime></starttime>
+<endtime></endtime>
+<timestamp></timestamp>
+<length></length>
+</program>
+</channel>
+</root>
