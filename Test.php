@@ -34,12 +34,12 @@ if(isset($_REQUEST['interface_url'])&&!empty($_REQUEST['interface_url'])){
 	?>
 <div>
 <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="player1" width="980" height="570">
-<param name="movie" value="EasyEditor?publisherId=88000">
+<param name="movie" value="EasyEditor.swf?publisherId=88000&t=<?php echo time() ?>">
 <param name="flashvars" value="playerId=84863534562803713&apiDomain=apivideo.kankanews.com&vid=<?php echo $url ?>">
 <param name="allowFullScreen" value="true">
 <param name="wmode" value="transparent">
 <param name="allowscriptaccess" value="always">
-<embed src="EasyEditor.swf?publisherId=88000" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" width="980" height="570" name="player1" flashvars="playerId=84863534562803713&apiDomain=apivideo.kankanews.com&vid=<?php echo $url ?>">
+<embed src="EasyEditor.swf?publisherId=88000&t=<?php echo time() ?>" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" width="980" height="570" name="player1" flashvars="playerId=84863534562803713&apiDomain=apivideo.kankanews.com&vid=<?php echo $url ?>">
 </object>
 </div>
 <div style="height:20;"></div>
