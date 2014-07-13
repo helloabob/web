@@ -31,6 +31,24 @@ header("Content-Type: text/html;charset=utf-8");
 <?php
 if(isset($_REQUEST['interface_url'])&&!empty($_REQUEST['interface_url'])){
 	$url=$_REQUEST['interface_url'];
+	
+	
+	$sub1= $_REQUEST['sub1'];
+$sub2= $_REQUEST['sub2'];
+$sub3= $_REQUEST['sub3'];
+$param="";
+
+if($sub1){
+	$param= "?t=1";
+}else if($sub2){
+	$param= "?t=2";
+}else if($sub3){
+	$param= "?t=3";
+}else{
+	$param= "?t=1";
+}
+	$url=$url.$param;
+	
 	?>
 <div>
 <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="player1" width="980" height="570">
