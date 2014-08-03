@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<channel name="东方卫视" id="216" live="http://segment.livehls.kksmg.com/hls/dfws/index.m3u8" />
+<channel name="新闻综合" id="210" live="http://segment.livehls.kksmg.com/hls/xwzh/index.m3u8" />
+</root>
