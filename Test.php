@@ -19,6 +19,10 @@ header("Content-Type: text/html;charset=utf-8");
 		this.swfOcj=thisMovie("player3");
 		this.swfOcj.startPreview();
 	}
+	function sel(){
+		this.swfOcj=thisMovie("player1");
+		alert(this.swfOcj.getSelectionInfo());
+	}
 	function getEditDat(){
 		this.swfOcj=thisMovie("player1");
 		return this.swfOcj.getEditDat();
@@ -26,6 +30,12 @@ header("Content-Type: text/html;charset=utf-8");
 	function save(){
 		this.swfOcj=thisMovie("player1");
 		alert(this.swfOcj.getEditDat());
+	}
+	function onSelectItem(src){
+		alert(unescape(src));
+	}
+	function onUpdateItem(src){
+		alert(src);
 	}
 </script>
 <?php
@@ -63,6 +73,10 @@ if($sub1){
 <div style="height:20;"></div>
 <div>
 <a href="#preview" id="btn-preview" style="width:93; height:32; background:#d30915; text-align:center; cursor:pointer; color:#fff; display:inline-block; vertical-align:middle; TEXT-DECORATION:none; font:12px/18px arial;" onclick="preview()">预览</a>
+</div>
+ <div style="height:20;"></div>
+ <div>
+<a id="btn-sel" style="width:93; height:32; background:#d30915; text-align:center; cursor:pointer; color:#fff; display:inline-block; vertical-align:middle; TEXT-DECORATION:none; font:12px/18px arial;" onclick="sel()">当前选择</a>
 </div>
  <div style="height:20;"></div>
 <div>
